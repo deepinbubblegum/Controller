@@ -26,7 +26,7 @@ String incoming = "";
 void setup() {
   Serial.begin(115200);
   Interval.begin(loop_1ms, 2500);//us
-  Interval_connect.begin(checker_interval, 5000);//us
+  Interval_connect.begin(checker_interval, 6000);//us
   for (int i = 0; i < arrSize; i++) {
     stepper[i]->setMaxSpeed(30000.0);
     stepper[i]->setSpeed(0.0);
